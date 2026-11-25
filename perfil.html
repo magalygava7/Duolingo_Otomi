@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi perfil</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #333;
+  margin: 0;
+  padding: 30px 15px;
+}
+
+.perfil {
+  max-width: 562px;
+  margin: auto;
+}
+
+.portada {
+  height: 213px;
+  background: #f9c9ed;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  position: relative;
+  overflow: hidden;
+}
+
+.avatar {
+  font-size: 145px;
+  line-height: 1;
+  margin-bottom: -8px;
+}
+
+.editar {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background: transparent;
+  border: 2px solid #b99bb4;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 22px;
+}
+
+h2 {
+  font-size: 23px;
+  margin: 27px 0 5px;
+}
+
+.usuario, .fecha, .sub {
+  color: #999;
+  font-size: 14px;
+}
+
+.fecha {
+  margin-top: 8px;
+}
+
+.seguidores {
+  color: #16b9f5;
+  font-weight: bold;
+  margin-top: 17px;
+}
+
+.banderas {
+  float: right;
+  font-size: 27px;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #eee;
+  margin: 34px 0 28px;
+}
+
+h3 {
+  font-size: 21px;
+  margin-bottom: 14px;
+}
+
+.estadisticas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.tarjeta {
+  border: 2px solid #e9e9e9;
+  border-radius: 16px;
+  min-height: 73px;
+  padding: 12px 17px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  position: relative;
+}
+
+.icono {
+  font-size: 25px;
+}
+
+.numero {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.sub {
+  margin-top: 5px;
+}
+
+.semana {
+  position: absolute;
+  right: -5px;
+  top: -9px;
+  background: #c66aff;
+  color: white;
+  font-size: 11px;
+  padding: 5px 8px;
+  border-radius: 7px;
+}
+
+</style>
+</head>
+<body>
+
+  <a class="boton-inicio" href="index.html">
+    <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+        <path d="M12 3 2.5 11h2.7v9h5.1v-5.8h3.4V20h5.1v-9h2.7L12 3z"/>
+    </svg>
+    <span>Volver al inicio</span>
+</a>
+
+
+<div class="perfil">
+
+  <div class="portada">
+    <button class="editar">✎</button>
+    <div class="avatar">👩🏻</div>
+  </div>
+
+  <h2>MAGALY GARCIA VAZQUEZ</h2>
+  <div class="usuario">MAGALYGARVA</div>
+  <div class="fecha">Se unió en octubre de 2026</div>
+
+  <div class="seguidores">
+    Siguiendo a 2 &nbsp;&nbsp; 0 seguidores
+    <span class="banderas">✅</span>
+  </div>
+
+  <hr>
+
+  <h3>Estadísticas</h3>
+
+  <div class="estadisticas">
+
+    <div class="tarjeta">
+      <span class="icono">🔥</span>
+      <div>
+        <div class="numero">29</div>
+        <div class="sub">días de racha</div>
+      </div>
+    </div>
+
+    <div class="tarjeta">
+      <span class="icono">⚡</span>
+      <div>
+        <div class="numero">1235</div>
+        <div class="sub">EXP totales</div>
+      </div>
+    </div>
+
+    <div class="tarjeta">
+      <span class="icono">💎</span>
+      <div>
+        <div class="numero">Amatista</div>
+        <div class="sub">división actual</div>
+      </div>
+      <span class="semana">1 SEMANA</span>
+    </div>
+
+    <div class="tarjeta">
+      <span class="icono">🏅</span>
+      <div>
+        <div class="numero" style="color:#aaa">3</div>
+        <div class="sub">veces en el top 3</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

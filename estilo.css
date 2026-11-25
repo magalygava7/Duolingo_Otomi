@@ -1,0 +1,95 @@
+body {
+    font-family: 'Nunito', 'Helvetica', sans-serif;
+    background-color: #b064c7;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h3 {
+    color: #4b4b4b;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+h1 {
+    color: #4b4b4b;
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+/* Contenedor de las 3 tarjetas */
+.contenedor {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Cada tarjeta */
+.card {
+    background-color: #fff;
+    border: 2px solid #e5e5e5;
+    border-bottom: 5px solid #e5e5e5;
+    border-radius: 20px;
+    padding: 20px;
+    width: 180px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.card:hover {
+    background-color: #f7f7f7;
+}
+
+.card:active {
+    border-bottom: 2px solid #e5e5e5;
+    transform: translateY(4px);
+}
+
+.card img {
+    width: 100%;
+    height: 140px;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.card p {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #4b4b4b;
+}
+
+/* Cuando selecciones la correcta, puedes agregarle esta clase con JS */
+.card.correcta {
+    background-color: #d7ffb8;
+    border: 2px solid #58cc02;
+    border-bottom: 5px solid #58cc02;
+    color: #58a700;
+}
+
+.card.incorrecta {
+    background-color: #ffdfe0;
+    border: 2px solid #ff4b4b;
+    border-bottom: 5px solid #ff4b4b;
+}
+
+/* Tu menu lateral bonito */
+#menu-lateral {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: #fff;
+    border-right: 2px solid #e5e5e5;
+    padding: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #777;
+}
